@@ -1,8 +1,8 @@
 """Your task is to make function, which returns the sum of a sequence of integers.
 
-The sequence is defined by 3 non-negative values: begin, end, step.
+The sequence is defined by 3 non-negative values: `begin, end, step`.
 
-If begin value is greater than the end, function should returns 0"""
+If begin value is greater than the end, function should returns `0`"""
 
 
 def sequence_sum1(begin_number, end_number, step):  # My solution
@@ -17,4 +17,5 @@ def sequence_sum1(begin_number, end_number, step):  # My solution
 
 
 def sequence_sum2(begin_number, end_number, step):  # Best way
+
     return sum(range(begin_number, end_number + 1, step))
