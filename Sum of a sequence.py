@@ -7,7 +7,7 @@ If begin value is greater than the end, function should returns `0`"""
 
 def sequence_sum1(begin_number, end_number, step):  # My solution
 
-    # Begin value is greater than the end(it`s not required, sum function returns 0 by default).
+    # begin_number is greater than the end_number(it`s not required, sum function returns 0 by default).
     if begin_number > end_number:
         return 0
 
