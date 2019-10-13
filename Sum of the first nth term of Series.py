@@ -28,3 +28,4 @@ def series_sum1(n):  # My solution
 
 def series_sum(n):  # Best way
     return '{:.2f}'.format(sum(1.0/(3 * i + 1) for i in range(n)))
+
