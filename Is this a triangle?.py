@@ -4,7 +4,10 @@ with the sides of given length and false in any other case.
 (In this case, all triangles must have surface greater than 0 to be accepted)."""
 
 
-def is_triangle1(a, b, c):  # My solution
+# My solution
+
+
+def is_triangle1(a, b, c):
 
     if a + b > c and a + c > b and b + c > a:
         return True
@@ -12,6 +15,9 @@ def is_triangle1(a, b, c):  # My solution
         return False
 
 
-def is_triangle2(a, b, c):  # Best way
+# Best way
+
+
+def is_triangle2(a, b, c):
 
     return (a + b) > c and (a + c) > b and (b + c) > a

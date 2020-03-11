@@ -13,7 +13,10 @@ odd_or_even({0, -1, -5}, 3) returns "even"
 """
 
 
-def odd_or_even(arr):  # My solution
+# My solution
+
+
+def odd_or_even(arr):
 
     x = sum(arr)
     if (x % 2) == 0:
@@ -22,6 +25,9 @@ def odd_or_even(arr):  # My solution
         return 'odd'
 
 
-def odd_or_even2(arr):  # Best way
+# Best way
+
+
+def odd_or_even2(arr):
 
     return 'even' if sum(arr) % 2 == 0 else 'odd'

@@ -20,6 +20,7 @@ If `n` is `<= 0` then return the input text."""
 
 # My solution
 
+
 def decrypt1(encrypted_text, n):
 
     if n <= 0:
@@ -54,6 +55,7 @@ def encrypt1(text, n):
     result = ''.join(encrypted)
 
     return encrypt1(result, n - 1)
+
 
 # Best way
 

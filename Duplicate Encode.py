@@ -11,7 +11,10 @@ the original string. Ignore capitalization when determining if a character is a 
 """
 
 
-def duplicate_encode(word):   # My solution
+# My solution
+
+
+def duplicate_encode1(word):
     iter_word = str(word.lower())
     check_list = []
     formatted_list = []
@@ -30,5 +33,8 @@ def duplicate_encode(word):   # My solution
     return ''.join(map(str, formatted_list))
 
 
-def duplicate_encode1(word):  # Best way
+# Best way
+
+
+def duplicate_encode2(word):
     return "".join(["(" if word.lower().count(c) == 1 else ")" for c in word.lower()])

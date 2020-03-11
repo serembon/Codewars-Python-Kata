@@ -10,7 +10,10 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 Note: for this kata `y` isn't considered a vowel."""
 
 
-def disemvowel1(string):  # My solution
+# My solution
+
+
+def disemvowel1(string):
     vowels = ('a', 'e', 'i', 'o', 'O', 'u', 'I')
     for x in string:
         if x in vowels:
@@ -19,5 +22,8 @@ def disemvowel1(string):  # My solution
     return string
 
 
-def disemvowel2(s):  # Best way
+# Best way
+
+
+def disemvowel2(s):
     return s.translate(None, "aeiouAEIOU")

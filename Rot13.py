@@ -8,6 +8,8 @@ should be shifted, like in the original Rot13 "implementation".
 Please note that using ```encode``` is considered cheating."""
 
 
-def rot13(message):  # My and best way solution
+# My and best way solution
+
+def rot13(message):
 
     return ''.join([chr(ord(n) + (13 if 'Z' < n < 'n' or n < 'N' else -13)) if n.isalpha() else n for n in message])

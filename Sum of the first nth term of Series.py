@@ -19,13 +19,17 @@ NOTE: In PHP the function is called ```series_sum().```
 """
 
 
-def series_sum1(n):  # My solution
-    x = 0
+# My solution
+
+
+def series_sum1(n):
     for i in range(n):
-        x += 1/(1+(3*i))
-    return format(x, '.2f')
+        i += 1/(1+(3*i))
+    return format(i, '.2f')
 
 
-def series_sum(n):  # Best way
+# Best way
+
+
+def series_sum2(n):
     return '{:.2f}'.format(sum(1.0/(3 * i + 1) for i in range(n)))
-

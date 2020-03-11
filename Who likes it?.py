@@ -13,8 +13,10 @@ likes ["Alex", "Jacob", "Mark", "Max"] // must be "Alex, Jacob and 2 others like
 For more than 4 names, the number in `and 2 others` simply increases.
 """
 
+# My solution
 
-def likes1(names):  # My solution
+
+def likes1(names):
 
     if len(names) == 0:
         return "no one likes this"
@@ -28,7 +30,9 @@ def likes1(names):  # My solution
         return "{}, {} and {} others like this".format(names[0], names[1], len(names)-2)
 
 
-def likes2(names):  # Best way
+# Best way
+
+def likes2(names):
 
     n = len(names)
     return {

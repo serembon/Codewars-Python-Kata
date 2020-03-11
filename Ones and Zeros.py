@@ -16,6 +16,9 @@ Testing: [1, 0, 1, 1] ==> 11
 However, the arrays can have varying lengths, not just limited to ```4```."""
 
 
-def binary_array_to_number(arr):  # My and best solution
+# My and best solution
+
+
+def binary_array_to_number(arr):
 
     return int("".join(str(x) for x in arr), 2)

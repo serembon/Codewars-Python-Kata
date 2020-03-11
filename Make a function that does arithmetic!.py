@@ -8,7 +8,10 @@ The four operators are "add", "subtract", "divide", "multiply".
 """
 
 
-def arithmetic1(a, b, operator):  # My solution
+# My solution
+
+
+def arithmetic1(a, b, operator):
 
     if operator == "add":
         return a + b
@@ -20,7 +23,10 @@ def arithmetic1(a, b, operator):  # My solution
         return a / b
 
 
-def arithmetic2(a, b, operator):  # Best way
+# Best way
+
+
+def arithmetic2(a, b, operator):
 
     return {
         'add': a + b,

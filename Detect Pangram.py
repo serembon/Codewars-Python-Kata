@@ -9,7 +9,10 @@ punctuation."""
 import string
 
 
-def is_pangram1(s):  # My solution
+# My solution
+
+
+def is_pangram1(s):
 
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     for char in alphabet:
@@ -18,6 +21,9 @@ def is_pangram1(s):  # My solution
     return True
 
 
-def is_pangram2(s):  # Best way
+# Best way
+
+
+def is_pangram2(s):
 
     return set(string.lowercase) <= set(s.lower())

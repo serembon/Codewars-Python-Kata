@@ -15,6 +15,9 @@ Examples:
 """
 
 
-def order(sentence):  # My and best way solution
+# My and best way solution
+
+
+def order(sentence):
 
     return ' '.join(sorted(sentence.split(), key=lambda w: sorted(w)))
